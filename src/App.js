@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { AUTHENTICATION_SIGN_IN } from 'lib/types';
 import './App.css';
 
 function App() {
@@ -6,7 +7,11 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>{process.env.REACT_APP_BUCKET_NAME}</p>
+        <p>
+          {process.env.REACT_APP_BUCKET_NAME}
+          <br />
+          {AUTHENTICATION_SIGN_IN}
+        </p>
         <a
           className='App-link'
           href='https://reactjs.org'
