@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@anttiviljami/serverless-stack-output": "^0.3.1"
   }
 }
