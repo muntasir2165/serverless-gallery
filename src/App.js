@@ -1,28 +1,11 @@
-import logo from './logo.svg';
-import { AUTHENTICATION_SIGN_IN } from 'lib/types';
+import React, { Component } from 'react';
+import MyComponent from 'components/componentTemplate';
 import './App.css';
 
-function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          {process.env.REACT_APP_BUCKET_NAME}
-          <br />
-          {AUTHENTICATION_SIGN_IN}
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return <MyComponent ownMessage='My Own Message' />;
+  }
 }
 
 export default App;
